@@ -25,14 +25,14 @@ int isEmpty(Queue fila){
     }
 }
 
-//TEM QUE TESTAR O ISFULL
+
 int isFull(){
     return 0;
 }
 
 void enQueue(Queue *fila,int valor){
     QueueNode *novo;
-    novo = (QueueNode*)malloc(sizeof(QueueNode)); //Crianção do no e prencheu o NO 
+    novo = (QueueNode*)malloc(sizeof(QueueNode));
     novo->info = valor;
     novo->prox =NULL;
     if(isEmpty(*fila)==1){
